@@ -6,6 +6,10 @@ module.exports = {
 	entry: {
 		index: path.resolve( process.cwd(), 'src', 'index.tsx' ),
 	},
+	resolve: {
+		...defaultConfig.resolve,
+		extensions: ['.ts', '.tsx', '.js']
+	},
 	module: {
 		...defaultConfig.module,
 		rules: [
