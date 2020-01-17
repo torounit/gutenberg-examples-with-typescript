@@ -1,0 +1,61 @@
+{
+  "_args": [
+    [
+      "@types/wordpress__blocks@6.4.4",
+      "/Users/torounit/Developer/HAMWORKS/price-table-block"
+    ]
+  ],
+  "_from": "@types/wordpress__blocks@6.4.4",
+  "_id": "@types/wordpress__blocks@6.4.4",
+  "_inBundle": false,
+  "_integrity": "sha512-+iTDbrraeANG6H4G/lkSf0VjTqu82XrmiYezXZ/xRNtAjgrjwjvSfQcCjB/9xsf57ouJOhc6KO6V37jDGQm+nw==",
+  "_location": "/@types/wordpress__blocks",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@types/wordpress__blocks@6.4.4",
+    "name": "@types/wordpress__blocks",
+    "escapedName": "@types%2fwordpress__blocks",
+    "scope": "@types",
+    "rawSpec": "6.4.4",
+    "saveSpec": null,
+    "fetchSpec": "6.4.4"
+  },
+  "_requiredBy": [
+    "/",
+    "/@types/wordpress__block-editor"
+  ],
+  "_resolved": "https://registry.npmjs.org/@types/wordpress__blocks/-/wordpress__blocks-6.4.4.tgz",
+  "_spec": "6.4.4",
+  "_where": "/Users/torounit/Developer/HAMWORKS/price-table-block",
+  "bugs": {
+    "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/issues"
+  },
+  "contributors": [
+    {
+      "name": "Derek Sifford",
+      "url": "https://github.com/dsifford"
+    }
+  ],
+  "dependencies": {
+    "@types/wordpress__components": "*",
+    "@types/wordpress__data": "*",
+    "@types/wordpress__element": "*"
+  },
+  "description": "TypeScript definitions for @wordpress/blocks",
+  "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped#readme",
+  "license": "MIT",
+  "main": "",
+  "name": "@types/wordpress__blocks",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+    "directory": "types/wordpress__blocks"
+  },
+  "scripts": {},
+  "typeScriptVersion": "3.6",
+  "types": "index",
+  "typesPublisherContentHash": "d5376bb74298a9d9827f9bec535ff0562815fe4cee4fbed2528379c9bd624a7e",
+  "version": "6.4.4"
+}
