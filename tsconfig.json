@@ -6,7 +6,19 @@
         "strict": true,
         "isolatedModules": true,
         "esModuleInterop": true,
-        "jsx": "react"
+        "jsx": "react",
+        "baseUrl": "./",
+        "paths": {
+            "@wordpress/blocks": [
+                "src/@types/wordpress__blocks"
+            ]
+        },
+        "typeRoots": [
+            "src/@types",
+            "node_modules/@types"
+        ]
     },
-    "include": ["src/**/*"]
+    "include": [
+        "src/**/*"
+    ]
 }
