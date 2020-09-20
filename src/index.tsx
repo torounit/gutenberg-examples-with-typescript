@@ -7,7 +7,7 @@ export interface BlockAttributes {
 	content: string;
 }
 
-export const edit: React.FC<BlockEditProps<BlockAttributes>> = ( { attributes: { content }, setAttributes, className } ) => {
+export const Edit: React.FC<BlockEditProps<BlockAttributes>> = ( { attributes: { content }, setAttributes, className } ) => {
 	const onChangeContent = ( newContent: string ) => {
 		setAttributes( { content: newContent } );
 	};
@@ -35,6 +35,6 @@ registerBlockType<BlockAttributes>( 'gutenberg-examples-with-typescript/gutenber
 	title: __( 'Example: Basic (ESNext)', 'gutenberg-examples-with-typescript' ),
 	icon: 'universal-access-alt',
 	category: 'layout',
-	edit,
+	edit: Edit,
 	save: Save,
 } );
