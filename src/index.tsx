@@ -3,11 +3,11 @@ import { __ } from '@wordpress/i18n';
 import { registerBlockType, BlockEditProps, BlockSaveProps } from '@wordpress/blocks';
 import { RichText } from '@wordpress/block-editor';
 
-interface BlockAttributes {
+export interface BlockAttributes {
 	content: string;
 }
 
-const edit: React.FC<BlockEditProps<BlockAttributes>> = ( { attributes: { content }, setAttributes, className } ) => {
+export const edit: React.FC<BlockEditProps<BlockAttributes>> = ( { attributes: { content }, setAttributes, className } ) => {
 	const onChangeContent = ( newContent: string ) => {
 		setAttributes( { content: newContent } );
 	};
@@ -20,7 +20,7 @@ const edit: React.FC<BlockEditProps<BlockAttributes>> = ( { attributes: { conten
 		/>
 	);
 };
-const save: React.FC<BlockSaveProps<BlockAttributes>> = ( { attributes: { content } } ) => {
+export const Save: React.FC<BlockSaveProps<BlockAttributes>> = ( { attributes: { content } } ) => {
 	return <RichText.Content tagName="p" value={ content } />;
 };
 
@@ -36,5 +36,5 @@ registerBlockType<BlockAttributes>( 'gutenberg-examples-with-typescript/gutenber
 	icon: 'universal-access-alt',
 	category: 'layout',
 	edit,
-	save,
+	save: Save,
 } );
