@@ -7,7 +7,7 @@
     "scripts": {
         "tsc": "tsc",
         "env": "wp-scripts env",
-        "test": "wp-scripts test-unit-js --config tests/js/jest.config.json",
+        "test": "wp-scripts test-unit-js --config jest.config.test.js",
         "start": "tsc --watch & wp-scripts start",
         "build": "tsc && wp-scripts build",
         "lint-js": "wp-scripts lint-js --ext .js,.jsx,.ts,.tsx src/**"
@@ -15,15 +15,24 @@
     "dependencies": {
         "@types/wordpress__block-editor": "^2.2.5",
         "@types/wordpress__i18n": "^3.4.0",
+        "@wordpress/block-editor": "^4.5.0",
+        "@wordpress/blocks": "^6.22.0",
+        "@wordpress/i18n": "^3.15.0",
         "react": "^16.12.0",
         "react-dom": "^16.12.0"
     },
     "devDependencies": {
         "@babel/preset-typescript": "^7.8.3",
+        "@types/jest": "^26.0.14",
+        "@types/react-test-renderer": "^16.9.3",
         "@typescript-eslint/eslint-plugin": "^2.16.0",
         "@typescript-eslint/parser": "^2.16.0",
         "@wordpress/browserslist-config": "2.6.0",
         "@wordpress/scripts": "^6.2.0",
+        "babel-jest": "^26.3.0",
+        "jest-watch-typeahead": "^0.6.1",
+        "react-test-renderer": "^16.13.1",
+        "ts-jest": "^26.4.0",
         "typescript": "^3.7.5"
     },
     "wp-env": {
